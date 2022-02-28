@@ -35,12 +35,12 @@ echo '添加主题argon'
 git clone $theme_argon package/lean/luci-theme-argon-mc
 echo 'CONFIG_PACKAGE_luci-theme-argon-mc=y' >>.config
 
-echo '添加OpenClash'
+#echo '添加OpenClash'
 git clone $openClash_url package/lean/luci-app-openclash
 
 #  OpenClash
-echo 'CONFIG_PACKAGE_luci-app-openclash=y' >>.config
-echo 'CONFIG_PACKAGE_luci-i18n-openclash-zh-cn=y' >>.config
+#echo 'CONFIG_PACKAGE_luci-app-openclash=y' >>.config
+#echo 'CONFIG_PACKAGE_luci-i18n-openclash-zh-cn=y' >>.config
 
 echo '添加Lienol包'
 git clone $lienol_url package/Lienol
@@ -55,9 +55,9 @@ echo 'CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Brook=y' >>.config
 echo 'CONFIG_PACKAGE_luci-app-passwall_INCLUDE_kcptun=y' >>.config
 echo 'CONFIG_PACKAGE_luci-i18n-passwall-zh-cn=y' >>.config
 
-echo '添加filebrowser'
-echo 'CONFIG_PACKAGE_luci-app-filebrowser=y' >>.config
-echo 'CONFIG_PACKAGE_luci-i18n-filebrowser-zh-cn=y' >>.config
+#echo '添加filebrowser'
+#echo 'CONFIG_PACKAGE_luci-app-filebrowser=y' >>.config
+#echo 'CONFIG_PACKAGE_luci-i18n-filebrowser-zh-cn=y' >>.config
 
 # echo '添加adguardhome'
 # git clone $adguardhome_url package/lean/luci-app-adguardhome
@@ -70,12 +70,12 @@ echo 'CONFIG_PACKAGE_luci-i18n-filebrowser-zh-cn=y' >>.config
 # echo 'CONFIG_PACKAGE_luci-app-vssr=y' >> .config
 # echo 'CONFIG_PACKAGE_luci-i18n-vssr-zh-cn=y'  >> .config
 
-echo '添加OpenAppFilter过滤器'
-git clone $filter_url package/OpenAppFilter
-echo 'CONFIG_PACKAGE_luci-app-oaf=y' >>.config
-echo 'CONFIG_PACKAGE_kmod-oaf=y' >>.config
-echo 'CONFIG_PACKAGE_appfilter=y' >>.config
-echo 'CONFIG_PACKAGE_luci-i18n-oaf-zh-cn=y' >>.config
+#echo '添加OpenAppFilter过滤器'
+#git clone $filter_url package/OpenAppFilter
+#echo 'CONFIG_PACKAGE_luci-app-oaf=y' >>.config
+#echo 'CONFIG_PACKAGE_kmod-oaf=y' >>.config
+#echo 'CONFIG_PACKAGE_appfilter=y' >>.config
+#echo 'CONFIG_PACKAGE_luci-i18n-oaf-zh-cn=y' >>.config
 
 # echo '添加Leo-Jo-My的Hello World,并且使用默认包配置'
 # git clone $vssr_plus_rely package/lean/luci-vssr-plus-rely
