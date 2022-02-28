@@ -1,7 +1,5 @@
 # cd $WORK_PATH 目录下,先运行的 public.h -> 设备.h -> scripts/feeds install -a
 # 必须的文件
-# device_name='G-DOCK'      # 设备名，放到了单独设备的sh文件中了
-# wifi_name="OpenWrt"       # Wifi 名字 ,放到了单独设备的sh文件中了
 lan_ip='192.168.2.1'                                                        # Lan Ip地址
 utc_name='Asia\/Shanghai'                                                   # 时区
 delete_bootstrap=true                                                       # 是否删除默认主题 true 、false
@@ -15,12 +13,6 @@ vssr_url='https://github.com/jerrykuku/luci-app-vssr.git'                   # vs
 vssr_plus_rely='https://github.com/Leo-Jo-My/my.git'                        # vssr_plus 依赖
 vssr_plus='https://github.com/Leo-Jo-My/luci-app-vssr-plus.git'             # vssr_plus 地址
 filter_url='https://github.com/destan19/OpenAppFilter.git'                  # AppFilter 地址
-# 命令
-# echo "修改机器名称"
-# sed -i "s/OpenWrt/$device_name/g" package/base-files/files/bin/config_generate
-
-# echo "修改wifi名称"
-# sed -i "s/OpenWrt/$wifi_name/g" package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
 echo "设置lan ip"
 sed -i "s/192.168.1.1/$lan_ip/g" package/base-files/files/bin/config_generate
