@@ -36,7 +36,7 @@ git clone $theme_argon package/lean/luci-theme-argon-mc
 echo 'CONFIG_PACKAGE_luci-theme-argon-mc=y' >>.config
 
 #echo '添加OpenClash'
-git clone $openClash_url package/lean/luci-app-openclash
+#git clone $openClash_url package/lean/luci-app-openclash
 
 #  OpenClash
 #echo 'CONFIG_PACKAGE_luci-app-openclash=y' >>.config
